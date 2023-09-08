@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocalNest</title>
+    <!-- Font Css -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/sass/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png">
+    <!-- Owl-carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="assets/js/jquery-3.7.0.min.js.js"></script>
+    <!-- owl-carousel -->
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="flex">
+                <div class="colA">
+                    <a href="">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="colB">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <a href="">Services</a>
+                            </li>
+                            <li>
+                                <a href="">Gallery</a>
+                            </li>
+                            <li class="contact-btn">
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="social-links">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
+                                        xml:space="preserve">
+                                        <g id="XMLID_834_">
+                                            <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                                        c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                                        V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                                        C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+                                        c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                            fill="#0F0F0F" />
+                                        <path
+                                            d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                            fill="#0F0F0F" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                            fill="#0F0F0F" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.5 12C3.5 7.30558 7.30558 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.9716 20.5 9.98587 20.3174 9.07345 19.9828C9.64822 18.4359 10.2115 16.8847 10.7517 15.3255C11.326 15.7348 12.0668 16 13 16C14.935 16 16.9749 14.7247 17.4806 12.1961C18.1155 9.02148 15.5728 6 12 6C10.4972 6 9.01887 6.6037 7.91298 7.56243C6.80483 8.52311 6 9.90687 6 11.5C6 12.2746 6.23394 13.1378 6.79149 13.7057C7.17707 14.0919 7.82087 14.0933 8.20711 13.7071C8.59019 13.324 8.59749 12.7074 8.22899 12.3155C7.44315 11.3348 8.47852 9.71907 9.22306 9.07361C9.99585 8.40366 11.0175 8 12 8C14.4272 8 15.8845 9.97852 15.5194 11.8039C15.2165 13.3183 14.065 14 13 14C12.1821 14 11.7416 13.6547 11.4599 13.208C11.6137 12.7237 11.7454 12.2838 11.8387 11.9263C12.0311 11.1886 12.1473 10.3002 11.4839 9.7474C10.9908 9.33644 10.4087 9.42759 10.0528 9.60557C9.39135 9.93629 9 10.7099 9 11.5C9 11.9414 9.06873 12.6253 9.31675 13.3315C8.67824 15.258 7.98579 17.167 7.27924 19.0696C5.00045 17.5449 3.5 14.9477 3.5 12ZM12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5Z"
+                                            fill="#000000" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner-home">
+            <div class="bg">
+                <video autoplay muted loop="true" src="assets/video/video.mp4"></video>
+            </div>
+            <div class="banner-wrapper">
+                <div class="container">
+                    <div class="content">
+                        <h1>Capturing Moments, Creating Memories: A Photographer's Journey</h1>
+                        <div class="down-arrow invert">
+                            <img src="assets/icons/down-arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="home-secA">
+                <div class="secA-wrapper">
+                    <div class="flex">
+                        <div class="colA">
+                            <div class="content">
+                                <div class="heading">
+                                    <h3>
+                                        <span>Portfolio</span> Highlights
+                                    </h3>
+                                </div>
+                                <p>Discover our captivating collection of evocative landscapes, enchanting portraits,
+                                    and vibrant events, all captured with passion and creativity by our skilled
+                                    photographers.</p>
+                                <div class="explore-more-btn invert">
+                                    <a href="">Explore More
+                                        <img src="assets/icons/rightarrowcontact.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colB">
+                            <div class="showcase-slider owl-carousel">
+                                <div class="item">
+                                    <figure>
+                                        <img src="assets/images/home/img-1.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="assets/images/home/img-2.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="assets/images/home/img-3.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="assets/images/home/img-4.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="assets/images/home/img-1.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="assets/images/home/img-2.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="home-secB">
+                <div class="container">
+                    <div class="heading size48 text-center">
+                        <h3>About
+                            <span>Us</span>
+                        </h3>
+                    </div>
+                    <div class="flex">
+                        <div class="colA">
+                            <div class="content">
+                                <p>We are a passionate team of skilled photographers dedicated to freezing moments in
+                                    time, capturing emotions, and preserving memories that last a lifetime.</p>
+                                <div class="counter_sec">
+                                    <div class="count-info">
+                                        <h3>
+                                            <span class="count" data-count="100"></span>+
+                                        </h3>
+                                        <p>Total Photoshoots</p>
+                                    </div>
+                                    <div class="count-info">
+                                        <h3>
+                                            <span class="count" data-count="150"></span>+
+                                        </h3>
+                                        <p>Happy Clients</p>
+                                    </div>
+                                    <div class="count-info">
+                                        <h3>
+                                            <span class="count" data-count="1000"></span>+
+                                        </h3>
+                                        <p>Stunning Photos</p>
+                                    </div>
+                                    <div class="count-info">
+                                        <h3>
+                                            <span class="count" data-count="184"></span>+
+                                        </h3>
+                                        <p>Years of Experience</p>
+                                    </div>
+                                    <div class="count-info">
+                                        <h3>
+                                            <span class="count" data-count="50"></span>+
+                                        </h3>
+                                        <p>Memorable Events</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colB">
+                            <div class="photo-card">
+                                <div class="card">
+                                    <img src="assets/icons/camera.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="home-secC">
+                <div class="bg">
+                    <img src="assets/images/home/img.jpg" alt="">
+                </div>
+                <div class="secD-wrapper">
+                    <div class="container">
+                        <div class="heading">
+                            <h3><em>Echoes of Innocence </em>Giggles and Grins in Focus</em></h3>
+                            <div class="explore-more-btn">
+                                <a href="">Explore More
+                                    <img src="assets/icons/rightarrowcontact.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="home-secD">
+                <div class="container">
+                    <div class="heading text-center">
+                        <h3>Our
+                            <span>Services</span>
+                        </h3>
+                    </div>
+                    <div class="service-slider owl-carousel">
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="ico">
+                                    <img src="assets/icons/service/wedding.png" alt="">
+                                </div>
+                                <small class="listin">01</small>
+                                <h5>Wedding Photography</h5>
+                                <p>Embrace our lens as we weave your love story, immortalizing cherished moments with
+                                    creative ardor. Let us be your storytellers, capturing wedding day's essence in
+                                    frames ablaze with passion.</p>
+                                <span class="read-mr" href="">Read More</span>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="ico">
+                                    <img src="assets/icons/service/product.png" alt="">
+                                </div>
+                                <small class="listin">02</small>
+                                <h5>Product Photography</h5>
+                                <p>Elevate your brand with our exceptional product photography services. We expertly
+                                    capture the essence of your products, showcasing their finest details, textures, and
+                                    craftsmanship. Let your creations shine and entice.</p>
+                                <span class="read-mr" href="">Read More</span>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="ico">
+                                    <img src="assets/icons/service/fashion.png" alt="">
+                                </div>
+                                <small class="listin">03</small>
+                                <h5>Fashion Photography</h5>
+                                <p>Step into a world of style and elegance. Our fashion photography brings garments to
+                                    life, celebrating design, texture, and movement. Let your collection dazzle with
+                                    images that redefine sophistication and allure.</p>
+                                <span class="read-mr" href="">Read More</span>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="ico">
+                                    <img src="assets/icons/service/potrait.png" alt="">
+                                </div>
+                                <small class="listin">04</small>
+                                <h5>Portrait Photography</h5>
+                                <p>With every click, we paint a portrait of emotions, stories, and individuality. Our
+                                    portrait photography captures the depth of your essence, creating timeless images
+                                    that reflect your unique journey and personality. Embrace the art of self-expression
+                                    through our lens.</p>
+                                <span class="read-mr" href="">Read More</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explore-more-btn invert">
+                        <a href="">Explore More
+                            <img src="assets/icons/rightarrowcontact.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="home-secE">
+                <div class="flex">
+                    <div class="colA">
+                        <div class="heading size48">
+                            <h3>Client <br><span>Testimonials</span>
+                            </h3>
+                            <p>Read what clients have to say about our photography – a collection of authentic voices."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="colB">
+                        <div class="client-slider owl-carousel">
+                            <div class="item">
+                                <div class="col">
+                                    <figure><img src="assets/images/clients/img-1.jpg" alt=""></figure>
+                                    <div class="content">
+                                        <div class="wrap">
+                                            <p>I had the pleasure of working with FocalNest for a special occasion,
+                                                and the experience was nothing short of
+                                                remarkable. Their ability to capture the true essence of each moment was
+                                                awe-inspiring. The photographs transported me
+                                                back to those cherished memories every time I look at them. FocalNest
+                                                is a true artist behind the lens.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col">
+                                    <figure><img src="assets/images/clients/img-2.jpg" alt=""></figure>
+                                    <div class="content">
+                                        <div class="wrap">
+                                            <p>When I hired FocalNest, I was expecting great photos, but what I
+                                                received was beyond my wildest imagination. FocalNest's attention to
+                                                detail and unique perspective turned ordinary
+                                                scenes into extraordinary works of art. Their
+                                                dedication to getting the perfect shot was evident throughout the entire
+                                                process. I couldn't be happier with the
+                                                results!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col">
+                                    <figure><img src="assets/images/clients/img-3.jpg" alt=""></figure>
+                                    <div class="content">
+                                        <div class="wrap">
+                                            <p>Finding a photographer who genuinely cares about their craft and their
+                                                clients is rare. FocalNest is one of those
+                                                gems. Their passion for photography shines through in every shot they
+                                                take. They have an incredible ability to capture
+                                                emotions and tell a story through their photographs. It was an absolute
+                                                pleasure working with FocalNest.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col">
+                                    <figure><img src="assets/images/clients/img-4.jpg" alt=""></figure>
+                                    <div class="content">
+                                        <div class="wrap">
+                                            <p>As someone who had a specific vision in mind for their photoshoot, I was
+                                                amazed at how FocalNest not only understood
+                                                my ideas but turned them into stunning visual realities. Their creative
+                                                flair and technical skill are unparalleled. The
+                                                photographs they delivered surpassed my expectations, and I'm trulys
+                                                grateful for their dedication and artistry..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col">
+                                    <figure><img src="assets/images/clients/img-5.jpg" alt=""></figure>
+                                    <div class="content">
+                                        <div class="wrap">
+                                            <p>The ability to capture emotions in a photograph is a gift, and FocalNest
+                                                possesses this gift in abundance. They have
+                                                an incredible knack for freezing moments of joy, love, and happiness in
+                                                their work. Each photograph tells a story, and
+                                                I'm in awe of how FocalNest can encapsulate so much feeling in a
+                                                single frame.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section hidden>
+            <div class="home-secF">
+                <div class="container">
+                    <div class="heading size48 text-center">
+                        <h3>
+                            <span>Contact</span> Us
+                        </h3>
+                    </div>
+                    <div class="flex">
+                        <div class="colA">
+                            <div class="form">
+                                <div class="flex">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control">
+                                        <label for="">Name</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control">
+                                        <label for="">Email</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control">
+                                        <label for="">Phone</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="" id="">
+                                            <option value="">I'm Intrested in</option>
+                                            <option value="">Portrait Photography</option>
+                                            <option value="">Wedding Photography</option>
+                                            <option value="">Product Photography</option>
+                                            <option value="">Fashion Photography</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group flex100">
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        <label for="">Message</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colB">
+                            <img src="assets/images/home/contact.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var counted = 0;
+        var lastScrollTop = 0;
+        $(window).scroll(function () {
+            var window_height = $(this).scrollTop();
+            $('.counter_sec .count-info').each(function () {
+                var count = $(this).children('h3').children('span.count'), countTo = count.attr('data-count'), countNum = count.text()
+                var onTop = $('.home-secA').offset().top
+                if (window_height > onTop) {
+                    $({ countNum }).animate({ countNum: countTo }, {
+                        duration: 1000,
+                        easing: 'swing',
+                        step: function () {
+                            count.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            count.text(this.countNum);
+                        }
+                    });
+                }
+            });
+        })
+    })
+</script>
+
+</html>

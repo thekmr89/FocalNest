@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after
+    padding: 0
+    margin: 0
+    list-style: none
+    box-sizing: border-box
+body,html
+    font-family: $Poppins
+    font-size: 16px
+    line-height: 24px
+    color: $text
+    --headerheight: 63.23px
+    &::-webkit-scrollbar
+        width: 3px
+        background: $Black
+    &::-webkit-scrollbar-track
+        box-shadow: none
+    &::-webkit-scrollbar-thumb
+        background-color: $Blue
+        outline: 0
+a[href]
+    text-decoration: none
+    transition: .5s ease
+img
+    max-width: 100%
+    display: block
+.container
+    max-width: 1280px
+    width: 100%
+    margin: 0 auto
+.container-fluid
+    padding: 0 25px
+    display: block
+    margin: 0 auto
+.heading
+    h3
+        font-size: 36px
+        line-height: 1.2
+    &.size48
+        h3
+            font-size: 36px
+h1,h2,h3,h4,h5,h6
+    font-family: $Montserrat
+    color: $LightBlue
+    font-weight: normal
+    span
+        color: $Blue
+h3
+    font-size: 48px
+    line-height: 1
+    font-weight: 700
+h5
+    font-size: 20px
+    line-height: 1
+.flex
+    display: flex
+    flex-wrap: wrap
+.grid
+    display: grid
+.custom-scroll
+    &::-webkit-scrollbar
+        width: 3px
+    &::-webkit-scrollbar-track
+        box-shadow: none
+    &::-webkit-scrollbar-thumb
+        background-color: $Black
+        outline: 0
+.text-center
+    text-align: center
+.invert
+    img
+        filter: invert(1)
+.overlay
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background: $Black
+    opacity: 0
+    pointer-events: none
+    transition: .3s sease
+.is-open
+    .overlay
+        pointer-events: all
+        opacity: .3
+// Video icon
+.video_icon
+    width: 68px
+    height: 68px
+    border: 1px solid $White
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border-radius: 100px
+    cursor: pointer
+    @include respond-to(screen-767)
+        width: 47px
+        height: 47px
+    &:before
+        width: 60px
+        height: 60px
+        top: 50%
+        right: 0
+        bottom: 0
+        left: 50%
+        position: absolute
+        content: ""
+        transform: translateX(-50%) translateY(-50%)
+        background: $White
+        border-radius: 50%
+        display: block
+        animation: pulse-border 1500ms ease-out infinite
+        @include respond-to(screen-767)
+            width: 47px
+            height: 47px
+    img
+        width: auto
+        position: relative
+@keyframes pulse-border
+    0%
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
+        opacity: 0.5
+    100%
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5)
+        opacity: 0
+.Model_Video
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 3
+    background: $Black
+    transform: translateY(100%)
+    transition: .5s ease
+    &.is-open
+        transform: translateY(0%)
+    .modelBody
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        iframe
+            width: 90%
+            height: 85%
+            border: 0
+            @include respond-to(screen-767)
+                width: 100%
+                height: 200px
+                border: 0
+                object-fit: cover
+main
+    margin-top: var(--headerheight)

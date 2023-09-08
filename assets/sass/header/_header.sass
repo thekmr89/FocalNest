@@ -1,0 +1,100 @@
+header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 3
+    transition: .5s ease
+    backdrop-filter: blur(7px)
+    background: $White
+    &::before
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        height: 0
+        transition: .5s ease
+    &.header-fixed
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
+        &::before
+            height: 100%
+        .header-wrapper
+            padding: 18px 75px
+    .header-wrapper
+        position: relative
+        z-index: 1
+        padding: 18px 75px
+        transition: .5s ease
+        .flex
+            justify-content: space-between
+            .colA
+                flex: 0 1 13%
+                max-width: 13%
+                width: 100%
+            .colB
+                flex: 0 1 max-content
+                max-width: max-content
+                width: 100%
+                display: flex
+                align-items: center
+                flex-wrap: wrap
+                justify-content: space-between
+                nav
+                    flex: 0 1 max-content
+                    max-width: max-content
+                    width: 100%
+                    margin-right: 25px
+                    ul
+                        li
+                            display: inline-block
+                            a
+                                font-family: $Montserrat
+                                color: $Black
+                                text-transform: uppercase
+                                letter-spacing: 1px
+                                font-size: 14px
+                                font-weight: 400
+                                &:hover
+                                    color: $Blue
+                            &:not(:first-child)
+                                margin-left: 20px
+                            &.contact-btn
+                                a
+                                    background: $Blue
+                                    color: $White
+                                    padding: 9px 25px
+                                    border: 1px solid $Blue
+                                    &:hover
+                                        background: none
+                                        border-color: $Blue
+                                        color: $Blue
+                .social-links
+                    flex: 0 1 max-content
+                    max-width: max-content
+                    ul
+                        li
+                            display: inline-block
+                            a
+                                display: block
+                                border: 1px solid none
+                                background: none
+                                svg
+                                    height: 22px
+                                    width: 22px
+                                    transition: .5s ease
+                                    path
+                                        transition: .5s ease
+                                        fill: $Black
+                                &:hover
+                                    background: $Blue
+                                    svg
+                                        path
+                                            fill: $White
+                            &:not(:first-child)
+                                margin-left: 15px
+                            &:first-child
+                                a
+                                    svg
+                                        width: 20px
+                                        height: 20px

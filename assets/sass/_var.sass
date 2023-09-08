@@ -1,0 +1,85 @@
+// media breakpiont
+$screen-365: 365px
+$screen-420: 420px
+$screen-520: 520px
+$screen-675: 675px
+$screen-767: 767px
+$screen-860: 860px
+$screen-991: 991px
+$screen-992: 992px
+$screen-1024: 1024px
+$screen-1140: 1140px
+$screen-1230: 1230px
+$screen-1300: 1300px
+$screen-1366: 1366px
+$screen-1440: 1440px
+$screen-1367: 1367px
+@mixin respond-to($media)
+    @if $media == screen-365
+        @media only screen and (max-width: $screen-365)
+            @content
+    @else if $media == screen-420
+        @media only screen and (max-width: $screen-420)
+            @content
+    @else if $media == screen-520
+        @media (max-width: $screen-520)
+            @content
+
+    @else if $media == screen-675
+        @media (max-width: $screen-675)
+            @content
+
+    @else if $media == screen-767
+        @media (max-width: $screen-767)
+            @content
+
+    @else if $media == phnLandscape
+        @media only screen  and (max-width: $screen-767) and  (orientation : landscape)
+            @content
+    @else if $media == screen-860
+        @media (max-width: $screen-860)
+            @content
+    @else if $media == screen-991
+        @media (max-width: $screen-991)
+            @content
+    @else if $media == screen-992
+        @media (min-width: $screen-992)
+            @content
+    @else if $media == screen-1024
+        @media (max-width: $screen-1024)
+            @content
+    @else if $media == screen-1140
+        @media (max-width: $screen-1140)
+            @content
+    @else if $media == screen-1230
+        @media (max-width: $screen-1230)
+            @content
+    @else if $media == screen-1300
+        @media (max-width: $screen-1300)
+            @content
+    @else if $media == screen-1366
+        @media (max-width: $screen-1366)
+            @content
+    @else if $media == screen-1440
+        @media (max-width: $screen-1440)
+            @content
+    @else if $media == screen-1367
+        @media (min-width: $screen-1367)
+            @content
+
+//var
+
+$headerheight: 69px
+
+//color  
+$Blue: #066fc1
+$LightBlue: #344750
+$Bluebg: #eaf6ff
+$text: #666666
+$Black: #000
+$White: #fff
+
+//font
+$Montserrat: 'Montserrat', sans-serif
+$Poppins: 'Poppins', sans-serif
+$Silver: 'silver south'
