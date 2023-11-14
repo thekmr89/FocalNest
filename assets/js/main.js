@@ -28,20 +28,36 @@ $(function () {
         var src = $(this).attr('data-video');
         $('.video_full iframe').attr('src', src);
     });
+
+    //
+
+
     $('.form-control').each(function () {
-        if ($(this).val() != '') {
-            $(this).parent('.form-group').addClass('valid');
-        } else {
-            $(this).parent('.form-group').removeClass('valid');
-        }
+        var label = $(this).parent('.form-group');
+        var isEmpty = $(this).val() === '';
+        label.toggleClass('valid', !isEmpty);
     });
-    $('.form-control').on('change', function () {
-        if ($(this).val() != '') {
-            $(this).parent('.form-group').addClass('valid');
-        } else {
-            $(this).parent('.form-group').removeClass('valid');
-        }
+    $('.form-control').on('keyup', function () {
+        var label = $(this).parent('.form-group');
+        var isEmpty = $(this).val() === '';
+        label.toggleClass('valid', !isEmpty);
     });
+    $('.form-group input,textarea,select').focus(function () {
+        $(this).parent('.form-group').addClass('is-focus');
+    });
+    $('.form-group input,textarea').focusout(function () {
+        var label = $(this).parent('.form-group');
+        var isEmpty = $(this).val() === '';
+        label.toggleClass('is-focus valid', !isEmpty);
+    });
+    if ($('.form-group input').val() == '') {
+        $(this).parent('.form-group').addClass('valid');
+    }
+
+    $('.selectbx').change(function () {
+        var isEmpty = $(this).val() === '';
+        $(this).toggleClass('active', !isEmpty);
+    })
 
     //
 
@@ -106,8 +122,8 @@ $(function () {
     $('.client-slider').owlCarousel({
         loop: true,
         margin: 0,
-        dots: false,
-        navText: ["<img src='assets/icons/prev.png'>", "<img src='assets/icons/next.png'>"],
+        dotsEach: true,
+        nav: false,
         smartSpeed: 1200,
         autoplay: false,
         responsive: {
@@ -124,7 +140,6 @@ $(function () {
             992: {
                 items: 1.5,
                 margin: 0,
-                nav: true,
             }
         }
     });

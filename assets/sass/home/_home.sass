@@ -29,8 +29,9 @@
             max-width: 600px
             h1
                 font-size: 48px
-                line-height: 58px
+                line-height: 55px
                 color: $White
+                font-weight: 500
             .down-arrow
                 text-align: center
                 margin-top: 50px
@@ -318,94 +319,159 @@
             max-width: 70%
             width: 100%
             .client-slider
-                .owl-stage
-                    display: flex
-                    .owl-item
-                        height: auto
-                        opacity: 1
-                        transition: .5s ease
-                        .item
-                            height: 100%
-                    .owl-item.active + .owl-item
-                        opacity: .4
+                .owl-dots
+                    --dotsize: 10px
+                    text-align: center
+                    margin-top: 20px
+                    .owl-dot
+                        display: inline-block
+                        height: var(--dotsize)
+                        width: var(--dotsize)
+                        border-radius: 50%
+                        margin-inline: 5px
+                        background: $LightBlue
+                        &.active
+                            background: $Blue
+                .owl-item.active + .owl-item
+                    opacity: .4
                 .col
                     display: flex
                     flex-wrap: wrap
+                    height: 300px
                     figure,.content
                         flex: 0 1 50%
                         max-width: 50%
                         width: 100%
                     figure
+                        height: inherit
                         img
-                            height: 300px
+                            height: 100%
                             object-fit: cover
                     .content
-                        display: flex
-                        align-items: center
-                        justify-content: center
                         background: #f5f5f5
                         border: 1px solid #efefef
-                        .wrap
-                            max-width: 250px
+                        padding: 30px 30px 0
+                        height: 100%
+                        overflow-y: auto
+                        &::-webkit-scrollbar
+                            width: 3px
+                            background: none
+                        &::-webkit-scrollbar-track
+                            box-shadow: none
+                        &::-webkit-scrollbar-thumb
+                            background-color: $Blue
+                            outline: 0
+                        p
+                            color: $Black
 .home-secF
-    padding: 55px 0
     background: $White
     position: relative
+    display: flex
+    align-items: center
+    height: calc(100vh - var(--headerheight))
+    background: url(../images/home/banner2.jpg) no-repeat
+    background-attachment: fixed
+    background-size: 100%
     .heading
         margin-bottom: 45px
-    .flex
-        justify-content: space-between
-        .colA
-            flex: 0 1 68%
-            max-width: 68%
+        img
+            filter: invert(1) brightness(3)
+            margin-left: auto
+            margin-right: auto
+            width: 5%
+            padding-bottom: 25px
+            caret-color: transparent
+        h3,span
+            color: $White
+    .form
+        max-width: 820px
+        margin: 0 auto
+        .flex
+            justify-content: space-between
+        .form-group
+            flex: 0 1 48%
+            max-width: 48%
             width: 100%
-            .form
-                justify-content: space-between
-                .form-group
-                    flex: 0 1 48%
-                    max-width: 48%
-                    width: 100%
-                    position: relative
-                    margin-bottom: 25px
-                    &.flex100
-                        flex: 0 1 100%
-                        max-width: 100%
-                    input
-                        width: 100%
-                        background: none
-                        border: none
-                        font-family: inherit
-                        border-bottom: 1px solid $Black
-                        padding: 5px 0
-                        &:focus
-                            outline: none
-                    select
-                        border: none
-                        font-family: inherit
-                        border-bottom: 1px solid $Black
-                        width: 100%
-                        padding: 0 0 5px
-                        color: $LightBlue
-                        font-size: 18px
-                        &:focus
-                            outline: none
-                        option
-                            font-size: 16px
-                            padding: 5px
-                    textarea
-                        width: 100%
-                        border: none
-                        border-bottom: 1px solid $Black
-                        min-height: 70px
-                        max-height: 300px
-                        resize: vertical
-                        &:focus
-                            outline: none
-                    label
-                        position: absolute
+            position: relative
+            margin-bottom: 25px
+            --transparentcolor: #ffffffd1
+            caret-color: transparent
+            &.is-focus
+                label
+                    font-size: 14px
+                    top: -5px
+                    translate: 0 0
+                    &.txtarlbl
                         top: 0
-                        left: 0
-        .colB
-            flex: 0 1 28%
-            max-width: 28%
-            width: 100%
+            &.valid
+                --transparentcolor: #fff
+            &.flex100
+                flex: 0 1 100%
+                max-width: 100%
+            input,select,textarea
+                width: 100%
+                background: none
+                border: none
+                font-family: inherit
+                border-bottom: 1px solid var(--transparentcolor)
+                color: var(--transparentcolor)
+                font-size: inherit
+                height: 45px
+                &:focus
+                    outline: none
+            select
+                &.active
+                    border-color: $White
+                    color: $White
+            select
+                width: 100%
+                padding: 0 0 5px
+                &:focus
+                    outline: none
+                option
+                    font-size: 16px
+                    padding: 5px
+                    color: $LightBlue
+            textarea
+                min-height: 100px
+                resize: none
+                padding-top: 20px
+            label
+                position: absolute
+                color: var(--transparentcolor)
+                transition: .5s ease
+                pointer-events: none
+                line-height: 1
+                left: 0
+                top: 50%
+                translate: 0 -50%
+                &.valid
+                    font-size: 14px
+                    top: -5px
+                    translate: 0 0
+                &.txtarlbl
+                    top: 15px
+                    translate: none
+                    &.valid
+                        top: 0
+        .sbmit-btn
+            text-align: center
+            margin-top: 40px
+            input,button,a
+                display: inline-block
+                border: none
+                background: $Blue
+                color: $White
+                font-family: inherit
+                font-size: inherit
+                font-weight: 300
+                letter-spacing: 1px
+                line-height: 1
+                border-radius: 3px
+                padding: 10px 40px
+                cursor: pointer
+                transition: .4s ease
+                &:hover
+                    background: $White
+                    color: $Blue
+                    font-weight: 500
