@@ -144,4 +144,30 @@ $(function () {
         }
     });
 
+    $('.more-blog-slider').owlCarousel({
+        loop: true,
+        margin: 0,
+        dots: false,
+        nav: true,
+        navText: ["<img src='assets/icons/prev.png'>", "<img src='assets/icons/next.png'>"],
+        smartSpeed: 1200,
+        autoplay: false,
+        responsive: {
+            0: {
+                items: 1.3,
+                margin: 20,
+                nav: false,
+            },
+            768: {
+                items: 2.3,
+                margin: 10,
+                nav: true,
+            },
+            992: {
+                items: 3,
+                margin: 15,
+            }
+        }
+    });
+
 });

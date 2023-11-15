@@ -1,0 +1,179 @@
+//listing
+
+.blog-banner
+    position: relative
+    .bg
+        height: calc( 100vh - var(--headerheight) )
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .banner-wrapper
+        position: absolute
+        top: 50%
+        left: 10%
+        translate: 0 -50%
+        .content
+            h1
+                font-size: 60px
+                color: $White
+                font-weight: 600
+.blogListingSecA
+    padding: 55px 0
+    .flex
+        --boxgap: 15px
+        --boxwidth: calc(33.33% - var(--boxgap)/2)
+        justify-content: space-between
+        --transanim: .3s ease-out
+        gap: 25px 0
+        .col
+            flex: 0 1 var(--boxwidth)
+            max-width: var(--boxwidth)
+            width: 100%
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+            border: 1px solid #e9e9e9
+            transition: var(--transanim)
+            a
+                display: block
+                height: 100%
+            figure
+                overflow: hidden
+                img
+                    object-fit: cover
+                    transition: var(--transanim)
+            figcaption
+                color: $Black
+                padding: 15px
+                border-top: none
+                line-height: 1.4
+                transition: var(--transanim)
+            &:hover
+                figcaption
+                    color: $Blue
+                figure
+                    img
+                        transform: scale(1.05)
+
+///blog-detail
+
+.blog-banner
+    &.blog-detail-banner
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            z-index: 1
+            pointer-events: none
+            user-select: none
+            background: linear-gradient(to right, rgb(0 0 0 / 45%) 24%, rgba(0, 0, 0, 0) 100%)
+        .banner-wrapper
+            z-index: 1
+            .content
+                max-width: 485px
+                h1
+                    font-size: 36px
+                    line-height: 1.2
+.blogDetailSecA
+    padding: 65px 0
+    .flex
+        .colA
+            flex: 1
+            padding-right: 3rem
+            .content
+                h3,h4,p,ul
+                    margin-bottom: 15px
+                    color: $Black
+                p,li
+                    text-align: justify
+                h3
+                    font-size: 30px
+                    font-weight: 600
+                h4
+                    font-size: 26px
+                    font-weight: 600
+                ul
+                    padding-left: 15px
+                    li
+                        list-style: disc
+                        &::marker
+                            color: $Blue
+        .colB
+            flex: 0 1 30%
+            .card
+                background: $Blue
+                padding: 25px
+                h4
+                    color: $White
+                    font-size: 20px
+                    line-height: 1
+                    font-weight: 600
+                    border-bottom: 1px solid $White
+                    margin-bottom: 20px
+                    padding-bottom: 15px
+                ul
+                    li
+                        color: $White
+                        line-height: 1.3
+                        font-weight: 300
+                        &:not(:last-child)
+                            margin-bottom: 12px
+.blogListingSecB
+    padding: 0 0 70px
+    .heading
+        margin-bottom: 35px
+    .more-blog-slider
+        --transanim: .3s ease-out
+        .owl-stage
+            display: flex
+            padding: 20px 0
+            .owl-item
+                height: auto
+        .owl-nav
+            --btnsize: 45px
+            button.owl-prev,.owl-next
+                height: var(--btnsize)
+                width: var(--btnsize)
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                background: $Blue
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px
+                position: absolute
+                top: 50%
+                translate: 0 -50%
+                img
+                    filter: invert(1)
+                    width: calc(var(--btnsize) * .2)
+            .owl-prev
+                left: calc( var(--btnsize) / -2 )
+            .owl-next
+                right: calc( var(--btnsize) / -2 )
+        .col
+            height: 100%
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 10px
+            border: 1px solid #e9e9e9
+            transition: var(--transanim)
+            a
+                display: block
+                height: 100%
+            figure
+                overflow: hidden
+                img
+                    object-fit: cover
+                    transition: var(--transanim)
+            figcaption
+                color: $Black
+                padding: 15px
+                border-top: none
+                line-height: 1.4
+                transition: var(--transanim)
+            &:hover
+                figcaption
+                    color: $Blue
+                figure
+                    img
+                        transform: scale(1.05)
