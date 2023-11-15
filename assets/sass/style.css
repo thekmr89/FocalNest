@@ -323,11 +323,8 @@ header .header-wrapper .flex .colB .social-links ul li a svg path {
   transition: 0.5s ease;
   fill: #000;
 }
-header .header-wrapper .flex .colB .social-links ul li a:hover {
-  background: #066fc1;
-}
 header .header-wrapper .flex .colB .social-links ul li a:hover svg path {
-  fill: #fff;
+  fill: #066fc1;
 }
 header .header-wrapper .flex .colB .social-links ul li:not(:first-child) {
   margin-left: 15px;
